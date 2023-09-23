@@ -1,3 +1,4 @@
+/* TODO: add font-family here once i figure out what it is */
 body {
     display: flex;
     flex-direction: column;
@@ -7,5 +8,23 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+/* TODO: Update headings so that they match example (font-family, size, color etc) */
+h1 {
+    font-size: 200%;
+}
+
+/* TODO: Update headings so that they match example (font-family, size, color etc) */
+h2 {
+    margin: 2% 0;
+    font-size: 150%;
+}
+
+/* Nav bar upper right */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
