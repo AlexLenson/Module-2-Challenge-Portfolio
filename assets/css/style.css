@@ -21,13 +21,13 @@ header {
 
 /* TODO: Update headings so that they match example (font-family, size, color etc) */
 h1 {
-    font-size: 200%;
+    font-size: 250%;
 }
 
 /* TODO: Update headings so that they match example (font-family, size, color etc) */
 h2 {
-    margin: 2% 0;
-    font-size: 150%;
+    /* margin: 2% 0; */
+    font-size: 200%;
 }
 
 /* h1 upper left margin, font size and font family */
@@ -35,22 +35,22 @@ header h1 {
     background-color: var(--header-light-blue);
     color: var(--header-dark-grey);
     font-family: 'Helvetica', 'sans-serif';
-    font-size: 250%;
     padding: .5% .5% .5% 2.5%;
     margin: .5% 0;
+    /* height: 100vh; */
 }
 
 /* Nav bar upper right spacing */
 nav ul {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 10px;
 }
 
 /* Nav bar upper right link color */
 header nav a {
     color: var(--header-light-blue);
-    font-size: 125%;
+    font-size: 150%;
     text-decoration: none;
     border-bottom: solid var(--header-light-blue) 5px;
     padding: 0 10px 5px 10px;
@@ -60,4 +60,26 @@ header nav a {
 nav {
     margin-right: 5%;
     margin-bottom: 5px;
+}
+
+/* hero banner */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    background-image:url("../images/chevron.jpg");
+    background-size: cover;
+    height: 20vh;
+    position: relative;
+}
+
+.hero h2 {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    background-color: var(--header-light-blue);
+    color: var(--header-dark-grey);
+    font-family: 'Helvetica', 'sans-serif';
+    padding: 10px;
 }
