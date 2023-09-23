@@ -1,3 +1,10 @@
+/* declare CSS variables */
+:root {
+    --header-dark-grey: #31343D;
+    --header-light-blue: #92CCCD;
+}
+
+
 /* TODO: add font-family here once i figure out what it is */
 body {
     display: flex;
@@ -9,11 +16,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--header-dark-grey);
 }
 
 /* TODO: Update headings so that they match example (font-family, size, color etc) */
 h1 {
     font-size: 200%;
+    background-color: var(--header-light-blue);
+    color: var(--header-dark-grey);
 }
 
 /* TODO: Update headings so that they match example (font-family, size, color etc) */
@@ -22,9 +32,14 @@ h2 {
     font-size: 150%;
 }
 
-/* Nav bar upper right */
+/* Nav bar upper right spacing */
 nav ul {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+/* Nav bar upper right link colors */
+header nav a {
+    color: var(--header-light-blue);
 }
