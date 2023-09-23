@@ -3,3 +3,9 @@ body {
     flex-direction: column;
     /* line height? */
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
