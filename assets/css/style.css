@@ -2,6 +2,11 @@
 :root {
     --header-dark-grey: #31343D;
     --header-light-blue: #92CCCD;
+    --main-dark-blue-text: #445876;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Helvetica', 'sans-serif';
 }
 
 
@@ -33,7 +38,6 @@ h2 {
 header h1 {
     background-color: var(--header-light-blue);
     color: var(--header-dark-grey);
-    font-family: 'Helvetica', 'sans-serif';
     padding: .5% .5% .5% 2.5%;
     margin: .5% 0;
     /* height: 100vh; */
@@ -49,7 +53,7 @@ nav ul {
 /* Nav bar upper right link color */
 header nav a {
     color: var(--header-light-blue);
-    font-size: 150%;
+    font-size: 125%;
     text-decoration: none;
     border-bottom: solid var(--header-light-blue) 5px;
     padding: 0 10px 5px 10px;
@@ -79,6 +83,30 @@ nav {
     bottom: 10%;
     background-color: var(--header-light-blue);
     color: var(--header-dark-grey);
-    font-family: 'Helvetica', 'sans-serif';
     padding: 10px;
+}
+
+.about-me {
+    display: flex;
+    color: var(--main-dark-blue-text);
+    margin: 25px 60px 25px 100px;
+}
+
+.about-me h1 {
+    border-right: solid var(--main-dark-blue-text) 5px;
+    padding-right: 20px;;
+    margin-right: 40px;
+    text-align: right;
+}
+
+.about-me p{
+    margin: 10px 0 10px 0;
+}
+
+.work {
+    display: flex;
+}
+
+.contact-me {
+    display: flex;
 }
