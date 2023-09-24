@@ -5,11 +5,10 @@
 }
 
 
-/* TODO: add font-family here once i figure out what it is */
 body {
     display: flex;
     flex-direction: column;
-    /* line height? */
+    line-height: 1.3;
 }
 
 header {
