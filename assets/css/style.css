@@ -127,13 +127,13 @@ nav {
 
 .project {
     width: 48%;
-    height: 100px;
+    height: 617px;
     margin-bottom: 2%;
 }
 
-/* .project:nth-child(3n-2) {
+.project:nth-child(5n-4) {
     width: 100%;
-} */
+}
 
 /* .project {
     background-image: url(../images/horiseon.png);
