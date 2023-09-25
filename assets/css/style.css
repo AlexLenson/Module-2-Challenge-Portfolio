@@ -86,6 +86,8 @@ nav {
     padding: 10px;
 }
 
+
+/* about me section */
 .about-me {
     display: flex;
     color: var(--main-dark-blue-text);
@@ -94,7 +96,7 @@ nav {
 
 .about-me h1 {
     border-right: solid var(--main-dark-blue-text) 5px;
-    padding-right: 20px;;
+    padding-right: 20px;
     margin-right: 40px;
     text-align: right;
 }
@@ -103,9 +105,39 @@ nav {
     margin: 10px 0 10px 0;
 }
 
+/* work section */
 .work {
     display: flex;
+    color: var(--main-dark-blue-text);
+    margin: 25px 60px 25px 100px;
 }
+
+.work h1 {
+    border-right: solid var(--main-dark-blue-text) 5px;
+    padding-right: 20px;
+    margin-right: 40px;
+    text-align: right;
+}
+
+.list-of-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    width: 48%;
+    height: 500px;
+    margin-bottom: 2%;
+}
+
+.project:nth-child(3n-2) {
+    width: 100%;
+}
+
+
+
+
 
 .contact-me {
     display: flex;
