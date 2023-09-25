@@ -129,6 +129,9 @@ nav {
     width: 48%;
     height: 617px;
     margin-bottom: 2%;
+    
+    /* why cant i see the border??? */
+    border: var(--header-light-blue) 5px;
 }
 
 .project:nth-child(5n-4) {
