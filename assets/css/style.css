@@ -131,9 +131,9 @@ nav {
     margin-bottom: 2%;
 }
 
-.project:nth-child(3n-2) {
+/* .project:nth-child(3n-2) {
     width: 100%;
-}
+} */
 
 /* .project {
     background-image: url(../images/horiseon.png);
