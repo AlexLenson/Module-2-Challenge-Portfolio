@@ -138,21 +138,50 @@ nav {
     align-items: flex-end;
     margin: .5em;
     text-decoration: none;
-    /* go back and target other ids for each project */
-    background-image: url('../images/horiseon-cropped2.png');
     /* why cant i see the border??? */
     border: 5px solid var(--header-light-blue);
-    background-size: 150%;
+    background-size: 100%;
 }
 
 .item:first-child{
     min-height: 400px;
+    /* possibly change flex basis to 97% */
     flex-basis: 100%;
 }
 
 .project:nth-child(5n-4) {
     width: 100%;
 }
+
+#horiseon {
+    /* go back and target other ids for each project */
+    background-image: url('../images/horiseon-cropped2.png');
+}
+
+#project2 {
+    /* go back and target other ids for each project */
+    background-image: url('../images/project2.png');
+}
+
+#project3 {
+    /* go back and target other ids for each project */
+    background-image: url('../images/project3.png');
+}
+
+#project4 {
+    /* go back and target other ids for each project */
+    background-image: url('../images/project4.png');
+}
+
+#project5 {
+    /* go back and target other ids for each project */
+    background-image: url('../images/project5.png');
+}
+
+
+
+
+
 
 /* .project {
     background-image: url(../images/horiseon.png);
