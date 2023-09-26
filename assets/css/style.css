@@ -234,6 +234,32 @@ nav {
 }
 
 
+/* Add transitions here */
+
+header nav a {
+    transition: margin-right 2s;
+}
+
+header nav a:hover {
+    background-color: var(--header-light-blue);
+    color: var(--header-dark-grey);
+}
+
+
+.contact-me nav a:hover {
+    transition: margin-right 2s;
+}
+
+.contact-me nav a:hover {
+    background-color: var(--main-dark-blue-text);
+    color: var(--header-light-blue);
+}
+
+
+
+
+
+
 /* At 980px breakpoint, h1 is above nav bar in the header */
 /* Additionally, each section heading moves above the content for that section */
 @media screen and (max-width: 980px) {
