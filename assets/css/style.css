@@ -298,16 +298,31 @@ nav {
 }
 
 
-/* Large smartphones - navbar changes color */
+/* At 768px breakpoint, all projects expand to width of 100% */
 @media screen and (max-width: 768px) {
-    nav {
-        background-color: #bb8588;
+
+    /* make all projects one column with equal size */
+    .list-of-projects a {
+        width: 100%;
+        /* how do i make them all the same height? */
     }
+
+    .contact-me nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        /* not working? need to justify left */
+        text-align: left;
+        gap: 10px;
+    }
+
+
+
 }
 
-/* Small smartphones - image placeholders change color */
-@media screen and (max-width: 576px) {
-    .sample-img {
-        background-color: #8ac4ff;
-    }
-}
+
+
+
+
+
+
+
