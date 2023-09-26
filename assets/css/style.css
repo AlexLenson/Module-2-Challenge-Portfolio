@@ -3,6 +3,7 @@
     --header-dark-grey: #31343D;
     --header-light-blue: #92CCCD;
     --main-dark-blue-text: #445876;
+    --project-title-font: #31333E;
 }
 
 * {
@@ -44,7 +45,7 @@ header h1 {
 }
 
 /* Nav bar upper right spacing */
-nav ul {
+header nav ul {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -141,40 +142,46 @@ nav {
     /* why cant i see the border??? */
     border: 5px solid var(--header-light-blue);
     background-size: 100%;
+    position: relative;
 }
 
-.item:first-child{
+.item:first-child {
     min-height: 400px;
-    /* possibly change flex basis to 97% */
-    flex-basis: 100%;
+    /* possibly change flex basis back to 100% */
+    flex-basis: 98%;
 }
 
-.project:nth-child(5n-4) {
-    width: 100%;
+.project-title {
+    background-color: var(--header-light-blue);
+    border: 5px solid var(--header-light-blue);
+    color: var(--project-title-font);
+    font-size: 100%;
+    position: absolute;
+    bottom: 10px;
 }
 
 #horiseon {
-    /* go back and target other ids for each project */
+    /* Adding background images for each project */
     background-image: url('../images/horiseon-cropped2.png');
 }
 
 #project2 {
-    /* go back and target other ids for each project */
+    /* Adding background images for each project */
     background-image: url('../images/project2.png');
 }
 
 #project3 {
-    /* go back and target other ids for each project */
+    /* Adding background images for each project */
     background-image: url('../images/project3.png');
 }
 
 #project4 {
-    /* go back and target other ids for each project */
+    /* Adding background images for each project */
     background-image: url('../images/project4.png');
 }
 
 #project5 {
-    /* go back and target other ids for each project */
+    /* Adding background images for each project */
     background-image: url('../images/project5.png');
 }
 
@@ -195,6 +202,7 @@ nav {
     display: flex;
     color: var(--main-dark-blue-text);
     margin: 25px 60px 25px 100px;
+    text-align: right;
 }
 
 .contact-me h1 {
@@ -208,4 +216,19 @@ nav {
 .contact-me nav {
     margin: 10px 0 10px 0;
     flex: 0 0 77%;
+}
+
+.contact-me nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+/* Nav bar bottom link color */
+.contact-me nav a {
+    color: var(--main-dark-blue-text);
+    font-size: 125%;
+    text-decoration: none;
+    border-bottom: solid var(--main-dark-blue-text) 5px;
+    padding: 0 10px 5px 10px;
 }
