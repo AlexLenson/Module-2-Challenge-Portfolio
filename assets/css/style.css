@@ -99,10 +99,12 @@ nav {
     padding-right: 20px;
     margin-right: 40px;
     text-align: right;
+    flex: 0 0 20%;
 }
 
 .about-me p{
     margin: 10px 0 10px 0;
+    flex: 0 0 77%;
 }
 
 /* work section */
@@ -159,7 +161,22 @@ nav {
 
 
 
-
+/* contact me section */
 .contact-me {
     display: flex;
+    color: var(--main-dark-blue-text);
+    margin: 25px 60px 25px 100px;
+}
+
+.contact-me h1 {
+    border-right: solid var(--main-dark-blue-text) 5px;
+    padding-right: 20px;
+    margin-right: 40px;
+    text-align: right;
+    flex: 0 0 20%;
+}
+
+.contact-me nav {
+    margin: 10px 0 10px 0;
+    flex: 0 0 77%;
 }
