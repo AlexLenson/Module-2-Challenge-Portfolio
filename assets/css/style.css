@@ -232,3 +232,82 @@ nav {
     border-bottom: solid var(--main-dark-blue-text) 5px;
     padding: 0 10px 5px 10px;
 }
+
+
+/* At 980px breakpoint, h1 is above nav bar in the header */
+/* Additionally, each section heading moves above the content for that section */
+@media screen and (max-width: 980px) {
+    
+    /* Column layout */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--header-dark-grey);
+        flex-direction: column;   
+    }
+
+    /* 100% width */
+    header h1 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* margin added to nav */
+    header nav ul {
+        margin: 10px auto;
+    }
+
+    /* about me heading moved above content */
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me h1 {
+        width: 100%;
+        text-align: left;
+        border-bottom: solid var(--main-dark-blue-text) 5px;
+        border-right: 0;
+    }
+
+    /* work heading moved above content */
+    .work {
+        flex-direction: column;
+    }
+
+    .work h1 {
+        width: 100%;
+        text-align: left;
+        border-bottom: solid var(--main-dark-blue-text) 5px;
+        border-right: 0;
+    }
+
+    /* Contact me heading moved above content */
+    .contact-me {
+        flex-direction: column;
+    }
+
+    .contact-me h1 {
+        width: 100%;
+        text-align: left;
+        border-bottom: solid var(--main-dark-blue-text) 5px;
+        border-right: 0;
+    }
+
+}
+
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    nav {
+        background-color: #bb8588;
+    }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    .sample-img {
+        background-color: #8ac4ff;
+    }
+}
