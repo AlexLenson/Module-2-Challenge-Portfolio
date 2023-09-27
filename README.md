@@ -10,7 +10,7 @@ The purpose of this project is to create a portofolio of my projects that I comp
 
 ## My Portfolio Page
 
-![screenshot](./assets/images/portfolio-page2.png)
+![screenshot](./assets/images/portfolio-page.png)
 
 
 
