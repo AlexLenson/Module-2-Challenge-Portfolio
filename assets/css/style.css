@@ -139,7 +139,6 @@ nav {
     align-items: flex-end;
     margin: .5em;
     text-decoration: none;
-    /* why cant i see the border??? */
     border: 5px solid var(--header-light-blue);
     background-size: 100%;
     position: relative;
@@ -234,10 +233,9 @@ nav {
 }
 
 
-/* Add transitions here */
-
+/* Nav bar link transitions */
 header nav a {
-    transition: margin-right 2s;
+    transition: background-color 1s, color 1s;
 }
 
 header nav a:hover {
@@ -247,18 +245,13 @@ header nav a:hover {
 
 
 .contact-me nav a:hover {
-    transition: margin-right 2s;
+    transition: background-color 1s, color 1s;
 }
 
 .contact-me nav a:hover {
     background-color: var(--main-dark-blue-text);
     color: var(--header-light-blue);
 }
-
-
-
-
-
 
 /* At 980px breakpoint, h1 is above nav bar in the header */
 /* Additionally, each section heading moves above the content for that section */
@@ -330,14 +323,19 @@ header nav a:hover {
     /* make all projects one column with equal size */
     .list-of-projects a {
         width: 100%;
-        /* how do i make them all the same height? */
+    }
+
+    /* all projects are same height of 150px */
+    .item:first-child {
+        min-height: 150px;
+        flex-basis: 98%;
     }
 
     .contact-me nav ul {
         flex-direction: column;
         justify-content: flex-start;
-        /* not working? need to justify left */
         text-align: left;
+        margin: 0;
         gap: 10px;
     }
 
